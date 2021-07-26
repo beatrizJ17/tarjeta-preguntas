@@ -1,0 +1,117 @@
+.texto-naranja {
+    color: rgba(255, 166, 0, 0.966);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ body {
+        background-image: 
+            linear-gradient(180deg, 
+            rgba(179, 105, 240, 0.897), 
+            rgba(52, 134, 241, 0.842));
+            font-family: 'Kumbh Sans';
+            font-size: 22px;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 2rem;
+    font-weight: 900;
+}
+
+html,body, .tamañocien {
+    height: 100%;
+}
+
+.imagen-container {
+    background-color: white;
+    display: inline-block;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.texto {
+    display: inline-block;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    background-color: white;
+}
+
+.tarjeta {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 40% 55%;
+}
+
+
+.my-image {
+    content: url(./images/illustration-woman-online-desktop.svg);
+    transform: translateX(-200px);
+    position:absolute;
+    z-index: 1;
+}
+
+.sombra-abajo {
+    content: url(./images/bg-pattern-desktop.svg);
+    transform: translateX(-200px);
+    position:static;
+    margin: 5px;
+    max-width: 30rem;
+}
+
+.caja-naranja {
+    content: url(./images/illustration-box-desktop.svg);
+    transform: translateX(-200px);
+    content-visibility: center; 
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    z-index: 1;
+
+}
+
+
+
+/*sobrexcribiendo una regla de boostrap*/
+.accordion-button::after {
+ background-image: url(./images/icon-arrow-down.svg);
+}
+
+
+
+
+@media (max-width:576px) {
+    
+    .tarjeta {
+       grid-template-columns: 100%;
+       grid-template-rows: 40% 50%;
+    }  
+    
+    .my-image {
+        content: url(./images/illustration-woman-online-mobile.svg);
+        transform: translateX(0px);
+        top: 6.5rem;
+        left: 2rem; 
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .texto {
+        display: inline-block;
+        border-radius: 0px 0px 15px 15px;
+        padding: 15px;
+        background-color: white;
+    }
+
+    
+    .imagen-container {
+        background-color: white;
+        display: inline-block;
+        border-radius: 15px 15px 0px 0px;
+    }
+}
